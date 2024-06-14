@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Data Analysis Results</title>
+</head>
+<body>
+    <h1>Data Analysis Results</h1>
+    <h2>Head of Data</h2>
+    {{ head|safe }}
+    <h2>Descriptive Statistics</h2>
+    {{ desc|safe }}
+    <h2>Missing Values</h2>
+    {{ missing_values|safe }}
+    <h2>Histogram</h2>
+    <img src="data:image/png;base64,{{ plot_url }}" alt="Histogram">
+</body>
+</html>
